@@ -15,13 +15,13 @@ public class FourSquare {
 		// 5. Set the pen width to 5
 		Jon.setPenWidth(5);
 		// 6. Do steps #7 to #8 four times...
-		for (int o = 0; o < 4; o++) {
+		for (int o = 0; o < 50; o++) {
 			// 7. Set the pen color to random
 			Jon.setRandomPenColor();
 			// 1. Call the drawSquare() method
 			drawSquare();
 			// 8. Turn the robot 90 degrees to the right
-			Jon.turn(45);
+			Jon.turn(90);
 Jon.hide();
 		
 	}
@@ -30,12 +30,12 @@ Jon.hide();
 	void drawSquare() {
 		
 		Jon.penDown();
-		for (int i = 0; i < 10; i++){
+		for (int i = 0; i < 7; i++){
 			
 			int u=100;
 			u=u-10;
-		Jon.move(u);
-		Jon.turn(90);
+		Jon.move(50);
+		Jon.turn(u);
 		}
 	
 	}
